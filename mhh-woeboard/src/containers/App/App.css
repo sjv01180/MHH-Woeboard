@@ -32,10 +32,10 @@
   border:3px solid;
   border-color:purple;
   background-color: black;
-  margin-left: 25%;
+  margin-left: 30%;
   margin-top:100px;
-  width:50%;
-  height: 50px;
+  width:450px;
+  height: 75px;
 
   background-color: #333;
 }
@@ -57,8 +57,8 @@
   font-size: 16px;  
   border: none;
   outline: none;
+  padding: 10px 16px;
   color: white;
-  padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
