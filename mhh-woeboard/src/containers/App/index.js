@@ -10,31 +10,44 @@ import { loadPartialConfig } from '@babel/core';
 class App extends Component {
   constructor() {
     super();
-    firebase.initializeApp(config);
-  }
-
-  componentWillMount() {
-    let postRef = firebase.database().ref('posts');
-    let _this = this;
-    postRef.on('value', function(snapshot) {
-      console.log(snapshot.val());
-
-      _this.setState({
-        posts: snapshot.val(),
-        loading: false
-      });
-    });
   }
 
   render() {
-    let children = this.props.children;
     return (
       <div className="App">
-        {children && React.cloneElement(children, {
-          firebaseRef: firebase.database().ref('posts'),
-          posts: this.state.posts,
-          loading: this.state.loading
-        })}
+        <div className ="NavBar">
+          <ul>
+            <div className="dropdown">
+              <button class="dropbtn">Get Happy 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Post Memes</a>
+                <a href="#">Animal Pictures</a>
+                <a href="#">Hype Squad</a>
+              </div>
+            </div>
+            <div className="dropdown">
+              <button class="dropbtn">Get Angry 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Just Yell</a>
+                <a href="#">Vent Squad</a>
+              </div>
+            </div> 
+            <div className="dropdown">
+              <button class="dropbtn">Get Sentimental 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Tear Fuel</a>
+                <a href="#">Cry Squad</a>
+              </div>
+            </div> 
+
+          </ul>
+        </div>
       </div>
     );
   }
