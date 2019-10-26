@@ -1,35 +1,4 @@
 import React, {Component} from 'react';
-<<<<<<< Updated upstream
-
-
-
-class App extends Component {
-  render() {
-    return (
- 
-
-      <div className="App">
-      <head>
-        <meta charset = "utf-8"></meta>
-        <link rel = "stylesheet" type= "text/css" href="./././index.css"/>
-        <title></title>
-      </head>
-      <header>
-
-        <nav>
-          <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-          </ul>
-        </nav>
-
-      </header>
-      
-        
-
-        Hello World
-=======
 import './App.css';
 
 import * as firebase from "firebase";
@@ -53,7 +22,7 @@ class App extends Component {
                 <i class="fa fa-caret-down"></i>
               </button>
               <div class="dropdown-content">
-                <a href="./post.js">Post Memes</a>
+                <a href="./index.js">Post Memes</a>
                 <a href="#">Animal Pictures</a>
                 <a href="#">Hype Squad</a>
               </div>
@@ -79,7 +48,27 @@ class App extends Component {
 
           </ul>
         </div>
->>>>>>> Stashed changes
+        
+        <div className = "Post">
+            <div className = "TopBar">
+                <h1>Title</h1>
+                <h3>user</h3>
+            </div>
+            <div className = "content">
+
+                caption, placeholder
+            </div>
+
+        </div>
+        <div className ="Comments">
+            <div className = "comment">
+                <header><h3>user</h3></header>
+                comment content
+            </div>
+        </div>
+
+
+
       </div>
     );
   }
