@@ -22,7 +22,7 @@ class App extends Component {
                 <i class="fa fa-caret-down"></i>
               </button>
               <div class="dropdown-content">
-                <a href="#">Post Memes</a>
+                <a href="./index.js">Post Memes</a>
                 <a href="#">Animal Pictures</a>
                 <a href="#">Hype Squad</a>
               </div>
@@ -63,6 +63,12 @@ class App extends Component {
                 caption, placeholder
             </div>
 
+        </div>
+        <div className ="Comments">
+            <div className = "comment">
+                <header><h3>user</h3></header>
+                comment content
+            </div>
         </div>
 
 
