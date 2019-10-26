@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-//import './App.css';
+import SiteHeader from './SiteHeader';
+import './App.css';
 import firebase from '../firebase-config';
 
 class App extends Component {
@@ -36,6 +37,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
+        <SiteHeader />
         <div className="panel panel-default">
           <div className="panel-heading">
             <h3 className="panel-title">

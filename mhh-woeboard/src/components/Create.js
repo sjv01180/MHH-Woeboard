@@ -9,7 +9,8 @@ class Create extends Component {
     super();
     this.ref = firebase.firestore().collection('posts');
     this.state = {
-      title: ''
+      title: '',
+      body: ''
     };
   }
   onChange = (e) => {
@@ -21,13 +22,15 @@ class Create extends Component {
   onSubmit = (e) => {
     e.preventDefault();
 
-    const { title } = this.state;
+    const { title, body } = this.state;
 
     this.ref.add({
-      title
+      title,
+      body
     }).then((docRef) => {
       this.setState({
-        title: ''
+        title: '',
+        body: ''
       });
       this.props.history.push("/")
     })
@@ -37,7 +40,7 @@ class Create extends Component {
   }
 
   render() {
-    const { title } = this.state;
+    const { title, body } = this.state;
     return (
       <div className="container">
         <div className="panel panel-default">
@@ -52,6 +55,10 @@ class Create extends Component {
               <div className="form-group">
                 <label htmlFor="title">Title:</label>
                 <input type="text" className="form-control" name="title" value={title} onChange={this.onChange} placeholder="Title" />
+              </div>
+              <div class="form-group">
+                <label htmlFor="body">post-body:</label>
+                <textArea className="form-control" name="body" onChange={this.onChange} cols="80" rows="3">{body}</textArea>
               </div>
               <button type="submit" className="btn btn-success">Submit</button>
             </form>
