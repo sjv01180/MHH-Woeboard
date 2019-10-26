@@ -2,15 +2,14 @@ import React from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
 
 import App from './containers/App';
-var firebase = require('firebase/app') ;
-
-import "firebase/auth" ;
-import "firebase/firestore" ;
+import Posts from './containers/Posts';
+import AddPost from './containers/AddPost';
 
 const Routes = (props) => (
-  <BrowserRouter>
-    <Route path="/" component={ App } />
-    <Route path="/hi" component={ <div>henlo wolrd</div> } >
+  <BrowserRouter {...props}>
+    <Route path="/" component={ App } >
+      <Route path="/posts" component={ Posts } />
+      <Route path="/add-post" component={ AddPost } />
     </Route>
   </BrowserRouter>
 );
