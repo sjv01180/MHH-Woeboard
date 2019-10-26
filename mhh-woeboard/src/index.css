@@ -11,3 +11,92 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* here's the stuff for the nav bar o nthe main page that lets you jump around the stuff*/
+page{
+  display: flex;
+  justify-content: space-around;
+  
+}
+page a div{
+  border: solid darkgreen 3px;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color: #589c2e;
+  color: black;
+}
+
+
+
+/* this turns a UL in a nav bar into a styled nav bar*/
+
+nav ul
+{
+
+display: flex;
+justify-content: flex-end;
+margin-top: 0px;
+padding-left: 0;
+margin-left: 0;
+margin-right: 10%;
+color: White;
+float: right;
+width: 50%;
+font-family: arial, helvetica, sans-serif;
+flex-basis:auto;
+  
+}
+
+nav ul li 
+{ 
+  display: inline;
+  background-size: 100% 100%;
+  margin:10px;
+  padding:10px;
+  padding-top:20px;
+  padding-bottom:20px;
+  border-radius: 100%;
+  
+}
+
+nav ul li a
+{
+
+color: White;
+text-decoration: none;
+float: right;
+}
+
+nav ul li a:hover
+{
+  transition:1s;
+  background-color: #00e5ff;
+  color: dimgrey;
+}
+
+/*these rules apply to mobile and/or a screen width smaller than 480px*/
+@media screen and (max-width:480px){
+  nav {
+      align-self:none;
+      clear: both;
+      width: 100%;
+      align-content: center;
+      float: center;
+  }
+
+  nav ul {
+      display: block;
+      
+      align-content: center;
+      float: center;
+      background-image: none;
+      
+  }
+  nav ul li{
+      display: block;
+      clear:both;
+  
+  }
+  
+}
