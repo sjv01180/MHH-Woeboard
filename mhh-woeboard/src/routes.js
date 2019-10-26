@@ -1,16 +1,21 @@
 import React from 'react';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
-import App from './containers/App';
-import Posts from './containers/Posts';
-import AddPost from './containers/AddPost';
+import App from './components';
+import Edit from './components/Edit.js';
+import Create from './components/Create.js';
+import Show from './components/Show.js';
 
-const Routes = (props) => (
-  <BrowserRouter {...props}>
-    <Route path="/" component={ App } >
-      <Route path="/posts" component={ Posts } />
-      <Route path="/add-post" component={ AddPost } />
-    </Route>
+
+const Routes = () => (
+  <BrowserRouter>
+    <Switch>
+      <Route exact path="/" component={App} />
+      <Route path="/edit/:id" component={Edit} />
+      <Route path="/create" component={Create} />
+      <Route path="/show/:id" component={Show} />
+      
+    </Switch>
   </BrowserRouter>
 );
 
