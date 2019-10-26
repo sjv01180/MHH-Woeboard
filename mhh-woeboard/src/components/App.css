@@ -1,11 +1,17 @@
 .App {
   text-align: center;
+  margin: auto;
   border: 3px solid;
   border-color: purple;
   margin: 10px;
   width: 1280px;
   Height: 720px;
   background-color: black;
+}
+
+.panel {
+  align-content: center;
+  color: white;
 }
 
 .App-logo {
