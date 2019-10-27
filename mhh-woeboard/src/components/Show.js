@@ -46,7 +46,11 @@ class Show extends Component {
             </h3>
           </div>
           <div className="panel-body">
+            
           <h3><Link to="/">Back to Discussion Boards</Link></h3>
+          <div className="postBody">
+          {this.state.post.body}
+          </div>
             <div className="editButton">
             <Link to={`/edit/${this.state.key}`} className="btn btn-success">Edit Post</Link>&nbsp;
             </div>
