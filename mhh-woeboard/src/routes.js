@@ -5,6 +5,9 @@ import App from './components';
 import Edit from './components/Edit.js';
 import Create from './components/Create.js';
 import Show from './components/Show.js';
+import HypeSquad from './components/HypeSquad.js';
+import CrySquad from './components/CrySquad.js';
+import index from './components/index.js'
 
 
 const Routes = () => (
@@ -14,6 +17,9 @@ const Routes = () => (
       <Route path="/edit/:id" component={Edit} />
       <Route path="/create" component={Create} />
       <Route path="/show/:id" component={Show} />
+      <Route path="/HypeSquad" component={HypeSquad} />
+      <Route path="/CrySquad" component={CrySquad} />
+      <Route path="/index" component={index} />
       
     </Switch>
   </BrowserRouter>

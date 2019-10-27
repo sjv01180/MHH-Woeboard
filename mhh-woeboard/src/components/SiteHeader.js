@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { Link } from 'react-router-dom';
 
 import './App.css';
 
@@ -18,9 +19,9 @@ class SiteHeader extends Component {
                 <i className="fa fa-caret-down"></i>
               </button>
               <div className="dropdown-content">
+              <Link to="/HypeSquad">Hype Squad</Link>
                 <a href="#">Post Memes</a>
                 <a href="#">Animal Pictures</a>
-                <a href="#">Hype Squad</a>
               </div>
             </div>
             <div className="dropdown">
@@ -28,8 +29,8 @@ class SiteHeader extends Component {
                 <i className="fa fa-caret-down"></i>
               </button>
               <div className="dropdown-content">
+              <Link to="/index">Vent Squad</Link>
                 <a href="#">Just Yell</a>
-                <a href="#">Vent Squad</a>
               </div>
             </div> 
             <div className="dropdown">
@@ -37,8 +38,8 @@ class SiteHeader extends Component {
                 <i className="fa fa-caret-down"></i>
               </button>
               <div className="dropdown-content">
+              <Link to="/CrySquad">Cry Squad</Link>
                 <a href="#">Tear Fuel</a>
-                <a href="#">Cry Squad</a>
               </div>
             </div> 
         </ul>

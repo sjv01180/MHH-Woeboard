@@ -48,7 +48,7 @@ class App extends Component {
             <table className="table table-stripe">
               <thead>
                 <tr>
-                  <th>Vent Board</th>
+                  <th>Cry Board</th>
                 </tr>
               </thead>
               <tbody>

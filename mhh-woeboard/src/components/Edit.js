@@ -36,7 +36,7 @@ class Edit extends Component {
   onSubmit = (e) => {
     e.preventDefault();
 
-    const { title } = this.state;
+    const { title,body } = this.state;
 
     const updateRef = firebase.firestore().collection('posts').doc(this.state.key);
     updateRef.set({
@@ -59,18 +59,19 @@ class Edit extends Component {
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title">
-              EDIT BOARD
+              EDIT Post
             </h3>
           </div>
           <div class="panel-body">
-            <h4><Link to={`/show/${this.state.key}`} class="btn btn-primary">Board List</Link></h4>
+            <div class="postBody">
+            <h3><Link to={`/show/${this.state.key}`} class="btn btn-primary">Back to Discussion Boards</Link></h3>
             <form onSubmit={this.onSubmit}>
               <div class="form-group">
-                <label for="title">Title:</label>
                 <input type="text" class="form-control" name="title" value={this.state.title} onChange={this.onChange} placeholder="Title" />
               </div>
               <button type="submit" class="btn btn-success">Submit</button>
             </form>
+            </div>
           </div>
         </div>
       </div>
