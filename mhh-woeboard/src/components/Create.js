@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import firebase from '../firebase-config';
 import { Link } from 'react-router-dom';
 
@@ -55,10 +54,10 @@ class Create extends Component {
             <h3><Link to="/" className="btn btn-primary">Back to Discussion Boards</Link></h3>
             <form onSubmit={this.onSubmit}>
               <div className="form-group">
-                <input type="text" className="form-control" name="title" value={title} onChange={this.onChange} placeholder="Enter Title" />
+                <input required="required" type="text" className="form-control" name="title" value={title} onChange={this.onChange} placeholder="Title" />
               </div>
               <div class="form-group">
-                <textArea className="form-control" name="body" onChange={this.onChange} cols="80" rows="3" placeholder={"Enter Text Here"}>{body}</textArea>
+                <textArea required="required" className="form-control" name="body" onChange={this.onChange} cols="80" rows="3">{body}</textArea>
               </div>
               <button type="submit" className="btn btn-success">Submit</button>
             </form>
