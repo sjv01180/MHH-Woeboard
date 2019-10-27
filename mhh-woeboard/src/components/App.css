@@ -280,10 +280,7 @@ button:hover, .editButton:hover
   margin-bottom: 2px;
   
 }
-.return
-{
-  border: 3px solid rgba(45, 63, 102, 0.842);
-}
+
 div.gallery {
   box-sizing: border-box;
   border: 1px solid #ccc;
