@@ -19,8 +19,7 @@ class SiteHeader extends Component {
                 <i className="fa fa-caret-down"></i>
               </button>
               <div className="dropdown-content">
-              <Link to="/HypeSquad">Hype Squad</Link>
-                <a href="#">Post Memes</a>
+                <a href="#">Memes</a>
                 <a href="#">Animal Pictures</a>
               </div>
             </div>
@@ -38,7 +37,6 @@ class SiteHeader extends Component {
                 <i className="fa fa-caret-down"></i>
               </button>
               <div className="dropdown-content">
-              <Link to="/CrySquad">Cry Squad</Link>
                 <a href="#">Tear Fuel</a>
               </div>
             </div> 
