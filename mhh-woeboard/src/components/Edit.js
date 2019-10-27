@@ -72,6 +72,9 @@ class Edit extends Component {
             <form onSubmit={this.onSubmit}>
               <div class="form-group">
                 <input type="text" class="form-control" name="title" value={this.state.title} onChange={this.onChange} placeholder="Title" />
+                <input type="text" className="form-control" name="title" value={this.state.title} onChange={this.onChange} placeholder="Title" />
+                <label htmlFor="body">Post Body:</label>
+                <textarea type="text" className="form-control" name="body" value={this.state.body} onChange={this.onChange} placeholder="Body" cols="80" rows="3" />
               </div>
               <button type="submit" className="btn btn-success">Submit</button>
             </form>
