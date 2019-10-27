@@ -42,8 +42,8 @@ class PostMemes extends Component {
         <div className="panel panel-default">
           <div className="panel-heading">
             <h3 className="panel-title">
+            Exquisite Memes
               <ImageExporter />
-              MEME LIST
             </h3>
           </div>
           <div className="panel-body">

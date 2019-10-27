@@ -71,9 +71,9 @@ class Edit extends Component {
             <h3><Link to={`/show/${this.state.key}`} class="btn btn-primary">Back to Discussion Boards</Link></h3>
             <form onSubmit={this.onSubmit}>
               <div class="form-group">
-                <input type="text" class="form-control" name="title" value={this.state.title} onChange={this.onChange} placeholder="Title" />
+                <label htmlFor="body">Edit Title</label>
                 <input type="text" className="form-control" name="title" value={this.state.title} onChange={this.onChange} placeholder="Title" />
-                <label htmlFor="body">Post Body:</label>
+                <label htmlFor="body">Edit Body</label>
                 <textarea type="text" className="form-control" name="body" value={this.state.body} onChange={this.onChange} placeholder="Body" cols="80" rows="3" />
               </div>
               <button type="submit" className="btn btn-success">Submit</button>
