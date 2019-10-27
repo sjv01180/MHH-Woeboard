@@ -19,7 +19,7 @@ class SiteHeader extends Component {
                 <i className="fa fa-caret-down"></i>
               </button>
               <div className="dropdown-content">
-                <a href="#">Memes</a>
+              <Link to="/PostMemes">Memes</Link>
                 <a href="#">Animal Pictures</a>
               </div>
             </div>
@@ -29,17 +29,8 @@ class SiteHeader extends Component {
               </button>
               <div className="dropdown-content">
               <Link to="/index">Vent Squad</Link>
-                <a href="#">Just Yell</a>
               </div>
-            </div> 
-            <div className="dropdown">
-              <button className="dropbtn">Get Sentimental 
-                <i className="fa fa-caret-down"></i>
-              </button>
-              <div className="dropdown-content">
-                <a href="#">Tear Fuel</a>
-              </div>
-            </div> 
+            </div>
         </ul>
       </div>
     </div>

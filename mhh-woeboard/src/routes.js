@@ -5,7 +5,8 @@ import App from './components';
 import Edit from './components/Edit.js';
 import Create from './components/Create.js';
 import Show from './components/Show.js';
-import index from './components/index.js'
+import index from './components/index.js';
+import PostMemes from './components/PostMemes';
 
 
 const Routes = () => (
@@ -16,6 +17,7 @@ const Routes = () => (
       <Route path="/create" component={Create} />
       <Route path="/show/:id" component={Show} />
       <Route path="/index" component={index} />
+      <Route path="/PostMemes" component={PostMemes} />
       
     </Switch>
   </BrowserRouter>
