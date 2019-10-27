@@ -40,18 +40,15 @@ class Show extends Component {
   render() {
     return (
       <div className="container">
-        <SiteHeader/>
         <div className="panel panel-default">
+          <div className="post-view">
           <div className="panel-heading">
             <h3 className="panel-title">
               {this.state.post.title}
             </h3>
           </div>
           <div className="panel-body">
-            <p>
-              content content content content
-            </p>
-          <h3><Link to="/">Back to Discussion Boards</Link></h3>
+          
           <div className="postBody">
           {this.state.post.body}
           </div>
@@ -59,6 +56,8 @@ class Show extends Component {
             <Link to={`/edit/${this.state.key}`} className="btn btn-success">Edit Post</Link>&nbsp;
             </div>
             <button onClick={this.delete.bind(this, this.state.key)} class="btn btn-danger">Delete Post</button>
+            <h3 className = "return"><Link to="/">Back to Discussion Boards</Link></h3>
+          </div>
           </div>
         </div>
       </div>
