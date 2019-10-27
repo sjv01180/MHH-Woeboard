@@ -41,7 +41,7 @@ class PostMemes extends Component {
         <SiteHeader/>
         <div className="panel panel-default">
           <div className="panel-heading">
-            <h3 className="panel-title">
+            <h2 className="panel-title">
               Exquisite Memes
             </h3>
             <ImageExporter message={"Upload Wholesome Memes"}/>
@@ -51,12 +51,13 @@ class PostMemes extends Component {
           <ul class="nivo">
             <li>
             <a href="images/garfeild.jpg"><img src={require("./images/garfeild.jpg")} width="600" height="400"/>
-            <span>eldrich cat</span></a>
+            </a></a>
             </li>
             <li>
-            <a href="images/garfeildwithoutgarfeild.jpg"><img src={require("./images/garfeildwithoutgarfeild.jpg")} width="600" height="400"/>
+            <a>
             <span>mid life crisis</span>
-            </a>
+            <a href="images/garfeildwithoutgarfeild.jpg"><img src={require("./images/garfeildwithoutgarfeild.jpg")} width="600" height="400"/>
+            </a></a>
             </li>
           </ul>
           </div>

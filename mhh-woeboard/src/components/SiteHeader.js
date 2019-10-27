@@ -11,6 +11,7 @@ class SiteHeader extends Component {
       <div className="topPanel">
           <img className="woahlrus" src={require('../media/woahlrus.gif')}/> 
           <h2 className="title">WoeBoards</h2>
+          <h5 className="titleDescription">The place to post your woes!</h5>
         </div>
         <div className ="NavBar">
           <ul>
