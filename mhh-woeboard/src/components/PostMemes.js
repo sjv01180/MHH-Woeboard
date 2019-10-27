@@ -40,6 +40,13 @@ class PostMemes extends Component {
       <div className="container App">
         <SiteHeader />
         <div className="panel panel-default">
+          <div className="panel-heading">
+            <h3 className="panel-title">
+              Exquisite Memes
+            </h3>
+            <ImageExporter />
+          </div>
+          <div className="panel-body">
           <div id="gallery">
           <ul class="nivo">
             <li>
@@ -60,6 +67,7 @@ class PostMemes extends Component {
             </a>
             </li>
           </ul>
+          </div>
           </div>
         <div class="clearfix"></div>
       </div>

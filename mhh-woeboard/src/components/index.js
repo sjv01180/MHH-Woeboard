@@ -44,10 +44,11 @@ class App extends Component {
           </div>
           <div className="panel-body">
             <h4><Link to="/create">Create Post</Link></h4>
+            <div className="tableStyle">
             <table className="table table-stripe">
               <thead>
                 <tr>
-                  <th>Discussion Board</th>
+                  <th>Vent Board</th>
                 </tr>
               </thead>
               <tbody>
@@ -60,6 +61,7 @@ class App extends Component {
                 )}
               </tbody>
             </table>
+            </div>
           </div>
         </div>
       </div>

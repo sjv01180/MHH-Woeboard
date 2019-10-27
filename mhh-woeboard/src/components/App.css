@@ -42,7 +42,7 @@
   border:3px solid;
   border-color:rgb(92, 136, 231);
   background-color: black;
-  width:450px;
+  width:300px;
   height: 75px;
   margin: auto;
   background-color: #333;
@@ -130,12 +130,12 @@
   font-size:50px;
   font-family: 'Staatliches', cursive;
   text-align: center;
-  padding:2%;
-  margin-bottom: 5px;
-  margin-top: 5px;
-
 }
-
+.panel-heading h2
+{
+  font-family: 'Ubuntu', cursive;
+  font-size: 30px;
+}
 .panel-body, .panel-heading, .panel-body a
 {
   font-family: 'Montserrat Alternates', sans-serif;
@@ -172,18 +172,60 @@
   transition-duration: 0.4s;
 }
 
+#gallery {
+  width:100%;
+  padding:0;
+  }
+
+#gallery ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+  }
+
+#gallery ul li {
+  display:inline;
+  position:relative;
+  margin:0;
+  padding:0;
+  }
+
+#gallery ul li span {
+  visibility:hidden;
+  position:absolute;
+  width:100%;
+  left:0;
+  bottom:0px;
+  z-index:3;
+  background:rgba(0,0,0,.6);
+  color:#FFF;
+  text-align:center;
+  }
+
+  #gallery ul li:hover span {
+      visibility:visible;
+      }
+
+
+#gallery ul li a img {
+  width:25%;
+  margin:0;
+  padding:0;
+  }
+
 th, td
 {
   margin-left:auto;
   margin-right:auto;
   width:1280px;
-  height:50px;
+  height:40px;
   text-align: left;
 }
-th{
+th
+{
   font-family: 'Ubuntu', sans-serif;
   font-size:30px;
-  padding:3px;
+  padding:10px;
 }
 td
 {
@@ -191,6 +233,12 @@ td
   border:2px solid black;
   padding:10px;
   transition-duration: 0.4s;
+  vertical-align: bottom;
+}
+td a
+{
+  width:100%;
+  height:100%;
 }
 td:hover
 {
@@ -222,11 +270,12 @@ td:hover
   opacity: 0.7; 
 }
 
+
 button, .editButton
 {
   color:white;
   background-color: #282c34;
-  border: 3px solid rgba(45, 63, 102, 0.842);
+  border: 3px solid rgb(92, 136, 231);
   text-decoration: none;
   cursor:pointer;
   padding:10px;
@@ -235,6 +284,7 @@ button, .editButton
   font-size:15px;
   margin:auto;
   transition-duration: 0.4s;
+  margin-left: .5%;
 }
 .editButton
 {
@@ -248,13 +298,12 @@ button:hover, .editButton:hover
 }
 .postBody
 {
-  background-color: rgba(148, 146, 146, 0.3);
-  
+  background-color: rgba(24, 24, 24, 0.3);
+  width: 70%;
   height:auto;
   display:block;
   padding:20px;
   margin:auto;
-  margin-left:0px;
   margin-bottom: 20px;
   border:3px solid #282c34;
 }
@@ -270,11 +319,12 @@ button:hover, .editButton:hover
   padding-left: 2%;
   padding-right: 2%;
   padding-bottom: 2%;
-  background-color: rgba(10,20,30,0.7);
+  background-color: rgba(34, 38, 43, 0.5);
 
 }
 .panel-heading
 {
+<<<<<<< HEAD
   
   background-color: #3f444b;
   margin-bottom: 2px;
@@ -290,6 +340,21 @@ button:hover, .editButton:hover
   width:100%;
   padding:0;
   }
+=======
+  margin-bottom: 2px; 
+}
+
+div.gallery {
+   margin:auto;
+   display:inline-block;
+}
+
+div.gallery img {
+  width: 300px;
+  height: auto;
+  padding:10px;
+}
+>>>>>>> 99713bc6040f8548e8f3ae7c5728d4776e1ec30e
 
 #gallery ul {
   list-style:none;

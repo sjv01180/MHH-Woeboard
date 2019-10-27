@@ -11,38 +11,26 @@ class SiteHeader extends Component {
       <div className="topPanel">
           <img className="woahlrus" src={require('../media/woahlrus.gif')}/> 
           <h2 className="title">WoeBoards</h2>
-      </div>
-      <div className ="NavBar">
-        <ul>
-          <div className="dropdown">
-            <button className="dropbtn">Get Happy 
-              <i className="fa fa-caret-down"></i>
-            </button>
-            <div className="dropdown-content">
-            <Link to={`/get_happy/post_memes`} className="btn btn-success">Post Memes</Link>
-              <a href="#">Animal Pictures</a>
-              <a href="#">Hype Squad</a>
+        </div>
+        <div className ="NavBar">
+          <ul>
+            <div className="dropdown">
+              <button className="dropbtn">Get Happy 
+                <i className="fa fa-caret-down"></i>
+              </button>
+              <div className="dropdown-content">
+              <Link to="/PostMemes">Memes</Link>
+                <a href="#">Animal Pictures</a>
+              </div>
             </div>
-          </div>
-          <div className="dropdown">
-            <button className="dropbtn">Get Angry 
-              <i className="fa fa-caret-down"></i>
-            </button>
-            <div className="dropdown-content">
-              <a href="#">Just Yell</a>
-              <a href="#">Vent Squad</a>
+            <div className="dropdown">
+              <button className="dropbtn">Get Angry 
+                <i className="fa fa-caret-down"></i>
+              </button>
+              <div className="dropdown-content">
+              <Link to="/index">Vent Squad</Link>
+              </div>
             </div>
-          </div> 
-          <div className="dropdown">
-            <button className="dropbtn">Get Sentimental 
-              <i className="fa fa-caret-down"></i>
-            </button>
-            <div className="dropdown-content">
-              <a href="#">Tear Fuel</a>
-              <a href="#">Cry Squad</a>
-            </div>
-          </div> 
-
         </ul>
       </div>
     </div>
