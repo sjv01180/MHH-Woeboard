@@ -46,22 +46,23 @@ class PostMemes extends Component {
               MEME LIST
             </h3>
           </div>
-          <div className="panel-body">
+          <div className="panel-body panel-gallery">
             <div className="gallery">
             <a target="_blank" href="./src/components/images/garfeild.jpg">
               <img src={require("./images/garfeild.jpg")} alt="garf" width="40px" height="20px" />
             </a>
             <div className="desc">good garf</div>
-            </div>
             <div className="gallery">
             <a target="_blank" href="./src/components/images/garfeild.jpg">
-              <img src={require("./images/garfeild.jpg")} alt="garf" width="40px" height="20px" />
+              <img src={require("./images/garfeildwithoutgarfeild.jpg")} alt="garf" width="40px" height="20px" />
             </a>
             <div className="desc">good garf</div>
-            </div>
           </div>
         </div>
+        <div class="clearfix"></div>
       </div>
+    </div>
+  </div>
     );
   }
 }

@@ -6,6 +6,7 @@
 .pnp.js
 /src/firebase-config.js
 src/utils/friendly-chat-1e2a7-e5ac2a340c96.json
+debug.log
 
 # testing
 /coverage

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import SiteHeader from './SiteHeader';
-import Create from './Create';
 import './App.css';
 import firebase from '../firebase-config';
 
