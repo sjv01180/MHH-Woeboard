@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import firebase from '../firebase-config';
 import { Link } from 'react-router-dom';
+import SiteHeader from './SiteHeader';
 
 class Show extends Component {
 
@@ -39,6 +40,7 @@ class Show extends Component {
   render() {
     return (
       <div className="container">
+        <SiteHeader/>
         <div className="panel panel-default">
           <div className="panel-heading">
             <h3 className="panel-title">
@@ -46,6 +48,9 @@ class Show extends Component {
             </h3>
           </div>
           <div className="panel-body">
+            <p>
+              content content content content
+            </p>
           <h3><Link to="/">Back to Discussion Boards</Link></h3>
             <div className="editButton">
             <Link to={`/edit/${this.state.key}`} className="btn btn-success">Edit Post</Link>&nbsp;
