@@ -95,7 +95,7 @@
 }
 
 .Post {
-  
+  align-self: center;
   text-align: center;
   border: 3px solid;
   border-color: purple;

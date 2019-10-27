@@ -1,35 +1,4 @@
 import React, {Component} from 'react';
-<<<<<<< Updated upstream
-
-
-
-class App extends Component {
-  render() {
-    return (
- 
-
-      <div className="App">
-      <head>
-        <meta charset = "utf-8"></meta>
-        <link rel = "stylesheet" type= "text/css" href="./././index.css"/>
-        <title></title>
-      </head>
-      <header>
-
-        <nav>
-          <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-          </ul>
-        </nav>
-
-      </header>
-      
-        
-
-        Hello World
-=======
 import './App.css';
 
 import * as firebase from "firebase";
@@ -79,7 +48,6 @@ class App extends Component {
 
           </ul>
         </div>
->>>>>>> Stashed changes
       </div>
     );
   }
