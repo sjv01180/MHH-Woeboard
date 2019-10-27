@@ -32,7 +32,7 @@ class ImageExporter extends Component {
     return(
       <div>
         <input type="file" onChange={this.handleChange}/>
-        <button type="submit" onClick={this.handleUpload}>Upload Wholesome Meme</button>
+        <button type="submit" onClick={this.handleUpload}>{this.props.message}</button>
       </div>
     );
   }

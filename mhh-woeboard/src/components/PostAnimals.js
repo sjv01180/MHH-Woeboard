@@ -38,25 +38,24 @@ class PostMemes extends Component {
   render() {
     return (
       <div className="container App">
-        <SiteHeader/>
+        <SiteHeader />
         <div className="panel panel-default">
           <div className="panel-heading">
             <h3 className="panel-title">
-              Exquisite Memes
+              CUTE ANIMALS
             </h3>
-            <ImageExporter message={"Upload Wholesome Memes"}/>
+            <ImageExporter message={"Upload Cute Animals"}/>
           </div>
           <div className="panel-body">
           <div id="gallery">
           <ul class="nivo">
             <li>
-            <a href="images/garfeild.jpg"><img src={require("./images/garfeild.jpg")} width="600" height="400"/>
-            <span>eldrich cat</span></a>
+            <a href="images/106927941_pa-6355447.jpg"><img src={require("./images/106927941_pa-6355447.jpg")} alt="doggo" width="300" height="200"/>
+            <span>cute puppies</span></a>
             </li>
             <li>
-            <a href="images/garfeildwithoutgarfeild.jpg"><img src={require("./images/garfeildwithoutgarfeild.jpg")} width="600" height="400"/>
-            <span>mid life crisis</span>
-            </a>
+            <a href="images/skynews-kitten-cat_4627790.jpg"><img src={require("./images/skynews-kitten-cat_4627790.jpg")} alt="kittens" width="300" height="200"/>
+            <span>cute kittens</span></a>
             </li>
           </ul>
           </div>

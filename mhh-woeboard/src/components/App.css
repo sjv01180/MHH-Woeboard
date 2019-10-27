@@ -206,11 +206,10 @@
       visibility:visible;
       }
 
-
 #gallery ul li a img {
   width:25%;
   margin:0;
-  padding:0;
+  padding: 5px;
   }
 
 th, td
@@ -324,23 +323,6 @@ button:hover, .editButton:hover
 }
 .panel-heading
 {
-<<<<<<< HEAD
-  
-  background-color: #3f444b;
-  margin-bottom: 2px;
-  
-}
-
-.return
-{
-  border: 3px solid rgba(45, 63, 102, 0.842);
-}
-
-#gallery {
-  width:100%;
-  padding:0;
-  }
-=======
   margin-bottom: 2px; 
 }
 
@@ -354,7 +336,6 @@ div.gallery img {
   height: auto;
   padding:10px;
 }
->>>>>>> 99713bc6040f8548e8f3ae7c5728d4776e1ec30e
 
 #gallery ul {
   list-style:none;

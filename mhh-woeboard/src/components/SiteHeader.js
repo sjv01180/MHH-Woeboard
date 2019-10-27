@@ -20,7 +20,7 @@ class SiteHeader extends Component {
               </button>
               <div className="dropdown-content">
               <Link to="/PostMemes">Memes</Link>
-                <a href="#">Animal Pictures</a>
+              <Link to="/PostAnimals">Animal Pictures</Link>
               </div>
             </div>
             <div className="dropdown">
