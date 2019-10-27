@@ -119,10 +119,10 @@
 }
 .topPanel
 {
-  border-radius: 10px solid;
   color: white;
   text-align:center;
-  display: inline-flex;
+  display: inline-block;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .panel-title
@@ -131,6 +131,7 @@
   font-family: 'Staatliches', cursive;
   text-align: center;
 }
+
 .panel-heading h2
 {
   font-family: 'Ubuntu', cursive;
@@ -174,43 +175,39 @@
 
 #gallery {
   width:100%;
-  padding:0;
+  padding:10px;
   }
 
 #gallery ul {
   list-style:none;
-  margin:0;
-  padding:0;
+  margin:auto;
   }
 
 #gallery ul li {
   display:inline;
   position:relative;
-  margin:0;
-  padding:0;
   }
 
 #gallery ul li span {
   visibility:hidden;
   position:absolute;
   width:100%;
-  left:0;
-  bottom:0px;
   z-index:3;
   background:rgba(0,0,0,.6);
   color:#FFF;
   text-align:center;
   }
 
-  #gallery ul li:hover span {
-      visibility:visible;
-      }
+#gallery ul li:hover span 
+{
+  visibility:visible;
+}
 
 
 #gallery ul li a img {
   width:25%;
-  margin:0;
-  padding:0;
+  padding:5px;
+  height:auto;
   }
 
 th, td
