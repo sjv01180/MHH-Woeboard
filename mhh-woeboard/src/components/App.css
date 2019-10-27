@@ -127,8 +127,9 @@
 
 .panel-title
 {
-  font-size:20px;
-  font-family: 'Ubuntu', sans-serif;
+  font-size:50px;
+  font-family: 'Staatliches', cursive;
+  text-align: center;
 }
 
 .panel-body, .panel-heading, .panel-body a
@@ -148,6 +149,7 @@
   float: right;
   position: absolute;
   right:8%;
+  transition-duration: 0.4s;
 }
 .panel-body h3{
   text-align:center;
@@ -155,12 +157,13 @@
   background-color: #282c34;
   color: white;
   padding:5px;
-  display:inline-block;
+  width:275px;
+  transition-duration: 0.4s;
 }
-
 .panel-body h4:hover, .panel-body h3:hover
 {
   background-color: rgb(92, 136, 231);
+  transition-duration: 0.4s;
 }
 
 th, td
@@ -176,32 +179,65 @@ th{
   font-size:30px;
   padding:3px;
 }
-
 td
 {
   background-color: rgba(24, 24, 24, 0.3);
   border:2px solid black;
   padding:10px;
+  transition-duration: 0.4s;
 }
 td:hover
 {
   background-color: rgba(24, 24, 24, 0.5);
+  transition-duration: 0.4s;
 }
 
 .form-group
 {
   padding:5px;
   font-family: 'Ubuntu', sans-serif;
-
 }
-
 .form-control
 {
   width:60%;
   padding:5px;
   border-radius: 5px;
+  background-color: rgba(146, 215, 255, .7);
+  border: 2px solid #282c34;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size:15px;
 }
-
 .form-group label{
   display:block;
+}
+::placeholder 
+{
+  color: black;
+  opacity: 0.7; 
+}
+
+
+button, .editButton
+{
+  color:white;
+  background-color: #282c34;
+  border: 3px solid rgb(92, 136, 231);
+  text-decoration: none;
+  cursor:pointer;
+  padding:10px;
+  border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size:15px;
+  margin:auto;
+  transition-duration: 0.4s;
+}
+.editButton
+{
+  display:inline-block;
+  font-family: 'Ubuntu', sans-serif;
+}
+button:hover, .editButton:hover
+{
+  transition-duration: 0.4s;
+  background-color: rgb(92, 136, 231);
 }

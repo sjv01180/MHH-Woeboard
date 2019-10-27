@@ -43,25 +43,26 @@ class Create extends Component {
     const { title, body } = this.state;
     return (
       <div className="container">
+          <img className="woahlrus" src={require('../media/woahlrus.gif')}/>
         <div className="panel panel-default">
           <div className="panel-heading">
             <h3 className="panel-title">
-              ADD POST
+              Create Discussion Post
             </h3>
           </div>
           <div className="panel-body">
+          <div className="postBody">
             <h3><Link to="/" className="btn btn-primary">Back to Discussion Boards</Link></h3>
             <form onSubmit={this.onSubmit}>
               <div className="form-group">
-                <label className="postTitle" htmlFor="title">Title:</label>
                 <input type="text" className="form-control" name="title" value={title} onChange={this.onChange} placeholder="Enter Title" />
               </div>
               <div class="form-group">
-                <label htmlFor="body">Text: </label>
-                <textArea className="form-control" name="body" onChange={this.onChange} cols="80" rows="3" placeholder="Enter Text Here">{body}</textArea>
+                <textArea className="form-control" name="body" onChange={this.onChange} cols="80" rows="3" placeholder={"Enter Text Here"}>{body}</textArea>
               </div>
               <button type="submit" className="btn btn-success">Submit</button>
             </form>
+            </div>
           </div>
         </div>
       </div>
