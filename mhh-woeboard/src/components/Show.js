@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import firebase from '../firebase-config';
 import { Link } from 'react-router-dom';
-import SiteHeader from './SiteHeader';
 
 class Show extends Component {
 

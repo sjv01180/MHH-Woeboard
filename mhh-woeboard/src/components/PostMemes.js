@@ -40,29 +40,30 @@ class PostMemes extends Component {
       <div className="container App">
         <SiteHeader />
         <div className="panel panel-default">
-          <div className="panel-heading">
-            <h3 className="panel-title">
-              <ImageExporter />
-              MEME LIST
-            </h3>
-          </div>
-          <div className="panel-body panel-gallery">
-            <div className="gallery">
-            <a target="_blank" href="./src/components/images/garfeild.jpg">
-              <img src={require("./images/garfeild.jpg")} alt="garf" width="40px" height="20px" />
+          <div id="gallery">
+          <ul class="nivo">
+            <li>
+            <a href="images/106927941_pa-6355447.jpg"><img src={require("./images/106927941_pa-6355447.jpg")} alt="doggo" width="300" height="200"/>
+            <span>cute puppies</span></a>
+            </li>
+            <li>
+            <a href="images/skynews-kitten-cat_4627790.jpg"><img src={require("./images/skynews-kitten-cat_4627790.jpg")} alt="kittens" width="600" height="400"/>
+            <span>cute kittens</span></a>
+            </li>
+            <li>
+            <a href="images/garfeild.jpg"><img src={require("./images/garfeild.jpg")} width="600" height="400"/>
+            <span>eldrich cat</span></a>
+            </li>
+            <li>
+            <a href="images/garfeildwithoutgarfeild.jpg"><img src={require("./images/garfeildwithoutgarfeild.jpg")} width="600" height="400"/>
+            <span>mid life crisis</span>
             </a>
-            <div className="desc">good garf</div>
-            <div className="gallery">
-            <a target="_blank" href="./src/components/images/garfeild.jpg">
-              <img src={require("./images/garfeildwithoutgarfeild.jpg")} alt="garf" width="40px" height="20px" />
-            </a>
-            <div className="desc">good garf</div>
+            </li>
+          </ul>
           </div>
-        </div>
         <div class="clearfix"></div>
       </div>
     </div>
-  </div>
     );
   }
 }
