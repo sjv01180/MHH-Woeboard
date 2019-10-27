@@ -5,6 +5,7 @@ import App from './components';
 import Edit from './components/Edit.js';
 import Create from './components/Create.js';
 import Show from './components/Show.js';
+import PostMemes from './components/PostMemes';
 
 
 const Routes = () => (
@@ -14,6 +15,7 @@ const Routes = () => (
       <Route path="/edit/:id" component={Edit} />
       <Route path="/create" component={Create} />
       <Route path="/show/:id" component={Show} />
+      <Route path="/get_happy/post_memes" component={PostMemes} />
       
     </Switch>
   </BrowserRouter>
