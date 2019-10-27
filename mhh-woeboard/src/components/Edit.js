@@ -38,7 +38,7 @@ class Edit extends Component {
   onSubmit = (e) => {
     e.preventDefault();
 
-    const { title, body } = this.state;
+    const { title,body } = this.state;
 
     const updateRef = firebase.firestore().collection('posts').doc(this.state.key);
     updateRef.set({
@@ -59,24 +59,23 @@ class Edit extends Component {
 
   render() {
     return (
-      <div className="container App">
-        <div className="panel panel-default">
-          <div className="panel-heading">
-            <h3 className="panel-title">
-              EDIT BOARD
+      <div class="container">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              EDIT Post
             </h3>
           </div>
-          <div className="panel-body">
-            <h4><Link to={`/show/${this.state.key}`} className="btn btn-primary">Board List</Link></h4>
+          <div class="panel-body">
+            <div class="postBody">
+            <h3><Link to={`/show/${this.state.key}`} class="btn btn-primary">Back to Discussion Boards</Link></h3>
             <form onSubmit={this.onSubmit}>
-              <div className="form-group">
-                <label htmlFor="title">Title:</label>
-                <input type="text" className="form-control" name="title" value={this.state.title} onChange={this.onChange} placeholder="Title" />
-                <label htmlFor="body">Post Body:</label>
-                <textarea type="text" className="form-control" name="body" value={this.state.body} onChange={this.onChange} placeholder="Body" cols="80" rows="3" />
+              <div class="form-group">
+                <input type="text" class="form-control" name="title" value={this.state.title} onChange={this.onChange} placeholder="Title" />
               </div>
               <button type="submit" className="btn btn-success">Submit</button>
             </form>
+            </div>
           </div>
         </div>
       </div>

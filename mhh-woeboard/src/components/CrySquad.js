@@ -19,12 +19,11 @@ class App extends Component {
     const posts = [];
     querySnapshot.forEach((doc) => {
       console.log(doc);
-      const { title, body } = doc.data();
+      const { title } = doc.data();
       posts.push({
         key: doc.id,
         doc, // DocumentSnapshot
-        title,
-        body
+        title
       });
     });
     this.setState({
@@ -49,16 +48,14 @@ class App extends Component {
             <table className="table table-stripe">
               <thead>
                 <tr>
-                  <th>Vent Board</th>
+                  <th>Cry Board</th>
                 </tr>
               </thead>
               <tbody>
                 {this.state.posts.map(post =>
-                <Link to={`/show/${post.key}`}>
                   <tr key={post.key}>
-                    <td>{post.title}</td>
+                    <td><Link to={`/show/${post.key}`}>{post.title}</Link></td>
                   </tr>
-                  </Link>
                 )}
               </tbody>
             </table>
