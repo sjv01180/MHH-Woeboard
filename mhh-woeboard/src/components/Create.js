@@ -53,7 +53,7 @@ class Create extends Component {
             <h4><Link to="/" className="btn btn-primary">Book List</Link></h4>
             <form onSubmit={this.onSubmit}>
               <div className="form-group">
-                <label htmlFor="title">Title:</label>
+                <label className="postTitle" htmlFor="title">Title:</label>
                 <input type="text" className="form-control" name="title" value={title} onChange={this.onChange} placeholder="Title" />
               </div>
               <div class="form-group">
