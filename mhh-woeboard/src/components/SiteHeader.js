@@ -7,8 +7,8 @@ import './App.css';
 class SiteHeader extends Component {
   render() {
     return (
-      <div className="topPanelContainer">
-        <div className="topPanel">
+    <div className="topPanelContainer">
+      <div className="topPanel">
           <img className="woahlrus" src={require('../media/woahlrus.gif')}/> 
           <h2 className="title">WoeBoards</h2>
         </div>

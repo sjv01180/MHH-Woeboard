@@ -8,7 +8,8 @@ class Edit extends Component {
     super(props);
     this.state = {
       key: '',
-      title: ''
+      title: '',
+      body: ''
     };
   }
 
@@ -16,10 +17,11 @@ class Edit extends Component {
     const ref = firebase.firestore().collection('posts').doc(this.props.match.params.id);
     ref.get().then((doc) => {
       if (doc.exists) {
-        const board = doc.data();
+        const post = doc.data();
         this.setState({
           key: doc.id,
-          title: board.title
+          title: post.title,
+          body: post.body
         });
       } else {
         console.log("No such document!");
@@ -40,13 +42,15 @@ class Edit extends Component {
 
     const updateRef = firebase.firestore().collection('posts').doc(this.state.key);
     updateRef.set({
-      title
+      title,
+      body
     }).then((docRef) => {
       this.setState({
         key: '',
-        title: ''
+        title: '',
+        body: ''
       });
-      this.props.history.push("/show/"+this.props.match.params.id)
+      this.props.history.push("/show/"+this.props.match.params.id);
     })
     .catch((error) => {
       console.error("Error adding document: ", error);
@@ -69,7 +73,7 @@ class Edit extends Component {
               <div class="form-group">
                 <input type="text" class="form-control" name="title" value={this.state.title} onChange={this.onChange} placeholder="Title" />
               </div>
-              <button type="submit" class="btn btn-success">Submit</button>
+              <button type="submit" className="btn btn-success">Submit</button>
             </form>
             </div>
           </div>

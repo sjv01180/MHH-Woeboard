@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import firebase from '../firebase-config';
 import { Link } from 'react-router-dom';
+import SiteHeader from './SiteHeader';
 
 class Show extends Component {
 
@@ -29,7 +30,7 @@ class Show extends Component {
 
   delete(id){
     firebase.firestore().collection('posts').doc(id).delete().then(() => {
-      console.log("Post successfully deleted!");
+      alert("Post successfully deleted!");
       this.props.history.push("/")
     }).catch((error) => {
       console.error("Error removing post: ", error);
@@ -40,14 +41,14 @@ class Show extends Component {
     return (
       <div className="container">
         <div className="panel panel-default">
+          <div className="post-view">
           <div className="panel-heading">
             <h3 className="panel-title">
               {this.state.post.title}
             </h3>
           </div>
           <div className="panel-body">
-            
-          <h3><Link to="/">Back to Discussion Boards</Link></h3>
+          
           <div className="postBody">
           {this.state.post.body}
           </div>
@@ -55,6 +56,8 @@ class Show extends Component {
             <Link to={`/edit/${this.state.key}`} className="btn btn-success">Edit Post</Link>&nbsp;
             </div>
             <button onClick={this.delete.bind(this, this.state.key)} class="btn btn-danger">Delete Post</button>
+            <h3 className = "return"><Link to="/">Back to Discussion Boards</Link></h3>
+          </div>
           </div>
         </div>
       </div>
